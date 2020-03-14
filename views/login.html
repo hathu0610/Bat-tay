@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+  <body>
+    <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0&appId=1306251849561123&autoLogAppEvents=1"></script>
+    <h3 style = "text-align: center; font-weight: black; ">Đăng kí</h3>
+    
+    <div id = "form">
+      <form >
+        <label for="name">Họ và Tên</label>
+        <input type="text" id="name" name="name" placeholder="Tên của bạn..">  
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email của bạn..">  
+        <label for="sdt">SĐT</label>
+        <input type="text" id="number" name="number" placeholder="SDT của bạn..">
+        
+        <div id = "button" class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+      </form >
+    </div>     
+      
+    </body>
+
+  <style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+    label {
+      font-size:15px;
+    }
+    #form {
+      display:flex;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      justify-content: center;
+    }
+    #button{
+      padding-top: 15px;
+    }
+</style>
+
+</html>
